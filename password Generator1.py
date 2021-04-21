@@ -44,6 +44,13 @@ for c in range(input_symbol):
     password.append(n)
 
 password = "".join(password)
-os.system("clear")
+
+if system() == "Windows":
+    os.system("cls")
+elif system() == "Linux":
+    os.system("clear")
+else:
+    print("Please use windows/linux")
+
 print("Done !")
 print("Your password is ---> ",password," <---")
